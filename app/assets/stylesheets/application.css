@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*Universal thins*/
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+/*Fonts*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Anton', Helvetica, Arial, sans-serif;
+}
+
+/*Setting the background image*/
+body{
+  background:url("background.jpg");
+  background-size:cover;
+}
+
+/*Navigation bar*/
+
+.navbar{
+  background-color:#0B486B;
+  padding-top:10px;
+  padding-bottom:10px;
+
+}
+
+
+.mine li a{
+  color: #AEE239;
+  border-radius: 10px;
+  margin-left:10px;
+  margin-right:10px;
+  font-size:1.4em;
+}
+
+.mine li a:hover{
+  background-color: #0B486B;
+  font-size:2em;
+}
+
+.mine li a:active{
+  background-color: #0B486B;
+  font-size:2em;
+}
+
+/*Navbar Branding*/
+
+.navbar-brand{
+  color:white;
+  font-weight: 700;
+  text-transform:uppercase;
+}
+
+.navbar-brand:hover{
+  font-size:1.6em;
+  color:white;
+  text-transform:uppercase;
+}
+
+
+/*Contact Page*/
+
+.me-contact{
+  width:40%;
+  margin:0 auto;
+  border-radius:90%;
+  margin-top:30px;
+}
+
+#submit{
+  margin:0 auto;
+}
+
+

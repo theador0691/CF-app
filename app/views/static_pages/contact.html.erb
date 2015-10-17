@@ -1,0 +1,38 @@
+ <section class="contact">
+            <div class="container-fluid">
+                <div class="row contact-content hero-text">
+                    <div class=" col-xs-12 col-sm-6 col-md-4 text-center">
+                        <div>
+                          <h1 class="text-center">Contact Me!</h1>
+                          <p>Call me: <a href="tel:1234">12345678</a></p>
+                          <p>Email:<a href="mailto:theador0691@gmail.com">Theador0691@gmail.com</a></p>
+                          <%= image_tag("me.jpg", class: "me-contact img-responsive") %>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group col-xs-12 col-sm-6 col-md-8 text-center">
+                        <h1 class="">Why don't you say hello!</h1>
+                            <label for="name">Your Name</label>
+                            <br>
+                            <input id="name" type="text" placeholder="Your name here." title="Name." class="form-control">
+                            <br>
+
+                            <label for="number">Phone Number</label>
+                            <br>
+                            <input id="number" type="tel" placeholder="Your number here." title="Your number." class="form-control">
+                            <br>
+                            <label for="email">Email</label>
+                            <br>
+                            <input id="email" type="email" placeholder="Your email here." required="requierd" title="Your Email." class="form-control">
+                            <br>
+                            <label for="message-box">Enter a messaage to send</label>
+                            <textarea placeholder="Your message here." id="message-box" class="form-control" style="resize:none" cols="60" row="5" required="requierd"></textarea>
+                            <br>
+                            <p id="visable-comment"></p>
+                            <br>
+                            <button type="submit" id="submit" class=" btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
