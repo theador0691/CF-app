@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :products
+  get 'products'        =>  'static_pages#products'
   get 'about'            => 'static_pages#about'
   get 'contact'          => 'static_pages#contact'
   root                      'static_pages#index'
