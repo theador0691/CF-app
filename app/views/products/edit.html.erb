@@ -1,0 +1,28 @@
+<div class="container-fluid hero-text-products">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Editing Product</h1>
+    </div>
+  </div>
+
+  <div class="row text-center">
+      <%= render 'form' %>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-6">
+       <button type="button" class="btn btn-primary" >
+           <%= link_to 'Show', @product %>
+       </button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-primary" >
+        <%= link_to 'Back', products_path %>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,54 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.hero-text-products{
+  color:black;
+  font-size:1.5em;
+  padding:20px;
+  background-color: white;
+  margin-bottom:5%;
+  border: 3px solid black;
+}
+// Buttons
+
+#product-options{
+  margin-top:300px;
+}
+
+
+a{
+  color:white;
+}
+a:visited{
+  color:white!important;
+}
+
+
+.btn-primary a{
+  color:white;
+}
+
+#new-product{
+  padding:15px;
+  margin-top:50px;
+
+}
+
+#new-product a{
+    color:white;
+}
+
+.hero-text-product{
+  color:black;
+  font-size:1.5em;
+  padding:20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top:10%;
+}
+
+.productInfo{
+  margin-top:50px;
+}

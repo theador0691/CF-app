@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<!-- Start of loop for the products -->
+<div class="container hero-text-products">
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h1>Listing Products</h1>
+  </div>
+</div>
+
+<% @products.each do |product| %>
+  <div class="row text-center">
+    <div class="col-md-4">
+        <h2>Name</h2>
+        <div class="productInfo">
+          <%= product.name %>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Description</h2>
+        <div class="productInfo">
+           <%= product.description %>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Image url</h2>
+        <div class="productInfo">
+           <%= product.image_url %>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center" id="product-options">
+      <button type="button" class="btn btn-primary" >
+       <%= link_to 'Show', product, class: "product-options" %>
+      </button>
+
+      <button type="button" class="btn btn-warning" >
+         <%= link_to 'Edit', edit_product_path(product), class: "product-options" %>
+      </button>
+
+      <button type="button" class="btn btn-danger" >
+          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "product-options" %>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container hero-text-products">
+<!-- End of loop for the products -->
+    <% end %>
+
+  <div class="row">
+      <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" id="new-product"><%= link_to 'New Product', new_product_path %></button>
+      </div>
+    </div>
+
+</div>
+
