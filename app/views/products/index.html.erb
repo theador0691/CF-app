@@ -11,23 +11,27 @@
 
 <% @products.each do |product| %>
   <div class="row text-center">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <h2>Name</h2>
         <div class="productInfo">
           <%= product.name %>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <h2>Description</h2>
         <div class="productInfo">
            <%= product.description %>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <h2>Image url</h2>
         <div class="productInfo">
-           <%= product.image_url %>
+           <%= image_tag(product.image_url, class: "img-responsive") %>
         </div>
+    </div>
+    <div class="col-md-3">
+      <h2> Color </h2>
+      <%= product.color %>
     </div>
   </div>
   <div class="row">
@@ -45,17 +49,16 @@
       </button>
     </div>
   </div>
-</div>
 
-<div class="container hero-text-products">
 <!-- End of loop for the products -->
-    <% end %>
-
-  <div class="row">
-      <div class="col-md-12 text-center">
-          <button type="button" class="btn btn-primary" id="new-product"><%= link_to 'New Product', new_product_path %></button>
-      </div>
+    <% if product == @products.last  %>
+      <div class="row">
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary" id="new-product"><%= link_to 'New Product', new_product_path %></button>
+        </div>
     </div>
-
+    <% end %>
+    <% end %>
 </div>
+
 
