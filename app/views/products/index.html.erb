@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <!-- Start of loop for the products -->
 <div class="container hero-text-products">
 
@@ -51,16 +50,22 @@
       </button>
     </div>
   </div>
-
 <!-- End of loop for the products -->
-    <% if product == @products.last  %>
+    <% if product == @products.last %>
       <div class="row">
         <div class="col-md-12 text-center">
             <button type="button" class="btn btn-primary" id="new-product"><%= link_to 'New Product', new_product_path %></button>
         </div>
     </div>
     <% end %>
+<% end %>
+    <% if (@products.empty?) %>
+      <div class="row">
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary" id="new-product"><%= link_to 'New Product', new_product_path %></button>
+        </div>
     <% end %>
+
 </div>
 
 

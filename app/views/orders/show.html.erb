@@ -2,6 +2,19 @@
   <div class="row">
     <div class="col-md-12 text-center hero-text">
       <h2>Order Show Page <h2>
+          <div class="col-md-12 text-center">
+      <p>Product ID:</p>
+      <p> <%= @orders %></p>
     </div>
   </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button type="button" class="btn btn-primary" >
+        <%= link_to 'Back', orders_path %>
+       </button>
+    </div>
+  </div>
+
 </div>
